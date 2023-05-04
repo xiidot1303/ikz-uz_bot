@@ -1,6 +1,5 @@
 #!/bin/bash
 
-pipenv shell
 mkdir logs
 
 echo "Project title:"
@@ -60,7 +59,7 @@ sudo certbot --nginx
 
 sudo service nginx reload
 
-wget "https://api.telegram.org/bot$bot_token/setWebhook?url=https://$domain/$bot_token"
+curl "https://api.telegram.org/bot$bot_token/setWebhook?url=https://$domain/$bot_token"
 
 
 echo "Installation complete"

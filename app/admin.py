@@ -6,7 +6,7 @@ class LanguageAdmin(admin.ModelAdmin):
     list_display = ['user_ip', 'lang']
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = []
+    list_display = ['index', ]
 
 admin.site.register(Language, LanguageAdmin)
 admin.site.register(Question, QuestionAdmin)
