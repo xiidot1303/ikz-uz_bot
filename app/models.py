@@ -30,7 +30,7 @@ class Question(models.Model):
     answer_ru = models.CharField(null=True, blank=True, max_length=255, verbose_name='Ответ (RU)')
     help_uz = models.CharField(null=True, blank=True, max_length=255, verbose_name='Подсказка (UZ)')
     help_ru = models.CharField(null=True, blank=True, max_length=255, verbose_name='Подсказка (RU)')
-    answer_similarity = models.IntegerField(null=True, blank=False, default=70)
+    answer_similarity = models.IntegerField(null=True, blank=False, default=70, verbose_name='Сходства ответов')
     datetime = models.DateTimeField(db_index=True, null=True, auto_now_add=True, blank=True, verbose_name='Дата')
 
     def save(self, *args, **kwargs):
