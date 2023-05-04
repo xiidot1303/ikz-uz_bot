@@ -11,9 +11,9 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ['index', 'text_ru', 'answer_similarity', 'datetime', 'edit_button']
     list_display_links = None
     list_filter = ['answer_similarity', 'datetime']
-    sortable_by = ['index']
+    sortable_by = ['index', "datetime", 'answer_similarity']
     search_fields = ['index', 'text_ru']
-    
+
     def edit_button(self, obj):
         change_url = reverse('admin:app_question_change', args=[obj.id])
         return format_html('<a class="btn btn-primary" href="{}"><i class="fas fa-edit"></i></a>', change_url)
