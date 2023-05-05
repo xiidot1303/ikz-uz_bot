@@ -54,17 +54,29 @@ lang_dict = {
         """Ваше имя успешно изменено!""",
     ],
 
-    "start quiz": ["Start quiz", "Start quiz"],
+    "start quiz": ["Viktorinani boshlang 📐", "Начать викторину 📐"],
 
-    "you dont have not answered questions": ["", ""],
+    "you dont have not answered questions": [
+        "🆒 Siz barcha savollarga javob berib bo'ldingiz.\n🔜 Iltimos, yangi savollar yuklanguncha kutib turing.", 
+        "🆒 Вы ответили на все вопросы.\n🔜 Пожалуйста, подождите, пока загрузятся новые вопросы."
+        ],
 
-    "question is not available": ["", ""],
+    "question is not available": [
+        "‼️ Вопрос недоступен", 
+        "‼️ Savol mavjud emas"
+        ],
 
-    "help": ["", ""],
+    "help": ["Ishora 💡", "Подсказка 💡"],
 
-    "incorrect answer": ["", ""],
+    "incorrect answer": [
+        "❌ Javob xato, qaytatdan urinib ko'ring", 
+        "❌ Неправильный ответ. Попробуйте еще раз"
+        ],
 
-    "true answer": ["", ""],
+    "true answer": [
+        "✅ Javob to'g'ri. Siz keyingi bosqichga o'tdingiz", 
+        "✅ Правильный ответ. Вы перешли на следующий этап"
+        ],
 
     "": ["", ""],
 
